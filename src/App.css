@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 105px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background: linear-gradient(#984900, #C86000);
 }
 
-.App-link {
-  color: #61dafb;
+.header,
+.submitMeme {
+  background: linear-gradient(#984900, #C86000);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  height: 100%;
+}
+
+.logo-name {
+  align-self: center;
+  color: #fff;
+}
+
+.memeContent {
+  padding: 36px;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 30px;
+}
+
+.inputMeme {
+  height: 35px;
+  width: 100%;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+}
+
+.inputMeme,
+.submitMeme {
+  border-radius: 5px;
+}
+
+.submitMeme {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.memeContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.img {
+  max-width: 100%;
 }
